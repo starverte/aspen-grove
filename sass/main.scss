@@ -11,6 +11,9 @@ textarea {
 html,
 body {
 }
+body {
+  padding-top: 0;
+}
 article {
 }
 b, strong {
@@ -30,12 +33,32 @@ hr {
 section {
   overflow: auto;
   font-size: 27px;
+  padding-bottom: 20px;
 }
 .label {
 }
 #page {
 }
 
+/* Alignment */
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+.aligncenter {
+}
+.alignnone {
+}
+.topright {
+  float: right;
+  margin-top: -3.5em;
+}
+
+
+/* =Front Page
+----------------------------------------------- */
 
 .section-title {
   font-size: 36px;
@@ -55,7 +78,6 @@ section {
   font-size: 30px;
   font-weight: 600;
 }
-
 .bg-green-light {
   color: #2a581c;
   background-color: #fafcf9;
@@ -68,22 +90,12 @@ section {
   margin-right: none;
   margin-left: none;
 }
-
-
-/* Alignment */
-.alignleft {
-  float: left;
+.carousel img {
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.alignright {
-  float: right;
-}
-.aligncenter {
-}
-.alignnone {
-}
-.topright {
-  float: right;
-  margin-top: -3.5em;
+#what-to-expect img {
+  margin-bottom: 20px;
 }
 
 
@@ -106,6 +118,9 @@ section {
 .sticky {
 }
 .byline {
+}
+.grunion-field-label {
+  font-size: initial;
 }
 .more-link {
 }
