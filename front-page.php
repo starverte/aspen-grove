@@ -170,7 +170,7 @@ get_header(); ?>
         <div class="row">
           <div class="col-md-4">
             <h2 class="section-title">Office</h2>
-            <img src="http://placehold.it/800x600?text=Office+picture">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/office.png">
             <p class="address">107 Peterson St<br>Fort Collins, CO 80524</p>
           </div>
           <div class="col-md-4">
