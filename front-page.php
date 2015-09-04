@@ -115,12 +115,12 @@ get_header(); ?>
         <div class="row">
           <h2 class="section-title">The Aspen Trees</h2>
 
-          <div class="image col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Aspen+Trees"></div>
+          <div class="image col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/aspen-trees.jpg"></div>
 
           <div class="col-md-8">
             <p class="callout-header">Like a grove of aspen trees, the human body is made up of many interdependent components</p>
             <p class="aspen-text">
-              A grove of aspen trees shares a complex root system; what affects on tree affects the entire organism.
+              A grove of aspen trees shares a complex root system; what affects one tree affects the entire organism.
             </p>
             <p class="aspen-text">
               Similarly, a human body shares various systems, including the circulatory, muscular, and skeletal systems; what affects one system affects the entire body. The same is true for anatomical parts; while the symptoms may be in the neck, shoulder, or back, the problem may actually be in the hip, knees, or legs.
