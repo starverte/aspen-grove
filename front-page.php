@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-<?php flint_get_widgets('header'); ?>
+<?php flint_get_sidebar('header'); ?>
 
     <div id="carousel-aspen-grove" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -206,6 +206,6 @@ get_header(); ?>
     </section>
 </div><!-- #page -->
 
-<?php flint_get_widgets('footer'); ?>
+<?php flint_get_sidebar('footer'); ?>
 <?php get_footer(); ?>
 

@@ -28,7 +28,11 @@
       <div class="collapse navbar-collapse navbar-aspen-grove-collapse">
 
         <?php
+        if ( class_exists( 'Flint_Walker_Nav_Menu_Navbar' ) ) {
+          wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-right', 'fallback_cb' => false, 'walker' => new Flint_Walker_Nav_Menu_Navbar ) );
+        } else {
           wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-right', 'fallback_cb' => false, 'walker' => new Flint_Bootstrap_Menu ) );
+        }
         ?>
 
       </div><!-- .navbar-collapse -->
