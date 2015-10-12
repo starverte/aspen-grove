@@ -5,8 +5,9 @@
  * Displays the navigation menu
  *
  * @package Flint/Aspen Grove
- * @since 0.0.3
+ * @since 0.1.0
  */
+
 ?>
 
   <nav class="navbar navbar-aspen-grove navbar-top" role="navigation">
