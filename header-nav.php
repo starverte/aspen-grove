@@ -1,12 +1,12 @@
 <?php
 /**
- *  * The Header for our theme.
- *   *
- *    * Displays the navigation menu
- *     *
- *      * @package Flint/Aspen Grove
- *       * @since 0.0.2
- *        */
+ * The Header for our theme.
+ *
+ * Displays the navigation menu
+ *
+ * @package Flint/Aspen Grove
+ * @since 0.0.3
+ */
 ?>
 
   <nav class="navbar navbar-aspen-grove navbar-top" role="navigation">

@@ -1,4 +1,4 @@
-Aspen Grove 0.0.2
+Aspen Grove 0.0.3
 =====
 Child theme of Flint. Theme originally developed for Wette Integrative Therapy Inc. for a physical therapy practice website.
 
