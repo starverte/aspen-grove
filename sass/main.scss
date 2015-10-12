@@ -1,3 +1,31 @@
+/*
+Theme Name: Aspen Grove
+Theme URI: https://github.com/starverte/aspen-grove.git
+Author: Star Verte LLC
+Description: Child theme of Flint. Theme originally developed for Wette Integrative Therapy Inc. for a physical therapy practice website.
+Version: 0.0.3
+License: GPLv3
+License URI: LICENSE.md
+Tags:
+Template: flint
+Template Version: 1.3.9
+
+    Copyright 2015 Star Verte LLC (email : dev@starverte.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 @import url(../flint/style.css);
 
 /* =Global
@@ -10,6 +38,9 @@ textarea {
 }
 html,
 body {
+}
+body {
+  padding-top: 0;
 }
 article {
 }
@@ -30,12 +61,32 @@ hr {
 section {
   overflow: auto;
   font-size: 27px;
+  padding-bottom: 20px;
 }
 .label {
 }
 #page {
 }
 
+/* Alignment */
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+.aligncenter {
+}
+.alignnone {
+}
+.topright {
+  float: right;
+  margin-top: -3.5em;
+}
+
+
+/* =Front Page
+----------------------------------------------- */
 
 .section-title {
   font-size: 36px;
@@ -55,7 +106,6 @@ section {
   font-size: 30px;
   font-weight: 600;
 }
-
 .bg-green-light {
   color: #2a581c;
   background-color: #fafcf9;
@@ -68,22 +118,12 @@ section {
   margin-right: none;
   margin-left: none;
 }
-
-
-/* Alignment */
-.alignleft {
-  float: left;
+.carousel img {
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.alignright {
-  float: right;
-}
-.aligncenter {
-}
-.alignnone {
-}
-.topright {
-  float: right;
-  margin-top: -3.5em;
+#what-to-expect img {
+  margin-bottom: 20px;
 }
 
 
@@ -106,6 +146,9 @@ section {
 .sticky {
 }
 .byline {
+}
+.grunion-field-label {
+  font-size: initial;
 }
 .more-link {
 }
