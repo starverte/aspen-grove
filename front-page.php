@@ -22,7 +22,8 @@ get_header(); ?>
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="http://placehold.it/3840x1500?text=Slide+1">
+          <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-xs.png">
+          <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-sm.png">
         </div>
         <div class="item" id="item_chronic_pain">
           <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chronic-pain-xs.png">
