@@ -28,6 +28,10 @@ Template Version: 1.5.0
 
 @import url(../flint/style.css);
 
+$green-dark: #367024;
+$green-darker: #2a581c;
+$green-light: #fafcf9;
+
 /* =Global
 ----------------------------------------------- */
 body,
@@ -84,9 +88,36 @@ section {
 /* =Front Page
 ----------------------------------------------- */
 
+.carousel-caption {
+  padding-bottom: 0;
+  bottom: auto;
+  top: 20px;
+  width: 40%;
+}
+#item_chronic_pain .carousel-caption {
+  left: 40%;
+}
+.carousel-caption h3 {
+  color: $green-darker;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-shadow: none;
+}
+#item_chronic_pain .carousel-caption h3 {
+  text-align: right;
+}
+#item_painful_treatments .carousel-caption h3 {
+  text-align: left;
+}
+#item_stress .carousel-caption h3 {
+  text-align: left;
+}
 .section-title {
   font-size: 36px;
   font-weight: 600;
+}
+.condition-list {
+  padding-left: 0;
 }
 .condition-item {
   font-size: 27px;
@@ -103,12 +134,12 @@ section {
   font-weight: 600;
 }
 .bg-green-light {
-  color: #2a581c;
-  background-color: #fafcf9;
+  color: $green-darker;
+  background-color: $green-light;
 }
 .bg-green-dark {
   color: #fff;
-  background-color: #367024;
+  background-color: $green-dark;
 }
 .row {
   margin-right: none;
@@ -120,9 +151,6 @@ section {
 }
 #what-to-expect img {
   margin-bottom: 20px;
-}
-.condition-list {
-  padding-left: 0;
 }
 
 
@@ -341,7 +369,7 @@ fieldset[disabled] .navbar-aspen-grove .btn-link:focus {
 
 .btn-green-dark {
   color: #fff;
-  background-color: #367024;
+  background-color: $green-dark;
   border-color: #2d5d1e;
 }
 .btn-green-dark:focus,
@@ -398,11 +426,11 @@ fieldset[disabled] .btn-green-dark:active,
 .btn-green-dark.disabled.active,
 .btn-green-dark[disabled].active,
 fieldset[disabled] .btn-green-dark.active {
-  background-color: #367024;
+  background-color: $green-dark;
   border-color: #2d5d1e;
 }
 .btn-green-dark .badge {
-  color: #367024;
+  color: $green-dark;
   background-color: #fff;
 }
 .btn-top-right {
