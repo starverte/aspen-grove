@@ -25,19 +25,22 @@ get_header(); ?>
           <img src="http://placehold.it/3840x1500?text=Slide+1">
         </div>
         <div class="item" id="item_chronic_pain">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/chronic-pain.png">
+          <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chronic-pain-xs.png">
+          <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chronic-pain-sm.png">
           <div class="carousel-caption">
             <h3>Do you have a chronic or complex condition that just isn't improving as you'd like?</h3>
           </div>
         </div>
         <div class="item" id="item_painful_treatments">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/painful-treatments.png">
+          <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painful-treatments-xs.png">
+          <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painful-treatments-sm.png">
           <div class="carousel-caption">
             <h3>Are you tired and frustrated with painful treatments that aren't helping?</h3>
           </div>
         </div>
         <div class="item" id="item_stress">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/stress.png">
+          <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/stress-xs.png">
+          <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/stress-sm.png">
           <div class="carousel-caption">
             <h3>Are you looking to decrease your level of stress and deal with your stress better?</h3>
           </div>

@@ -91,15 +91,14 @@ section {
 .carousel-caption {
   padding-bottom: 0;
   bottom: auto;
-  top: 20px;
-  width: 40%;
+  top: 0;
+  width: 50%;
 }
 #item_chronic_pain .carousel-caption {
-  left: 40%;
+  left: 30%;
 }
 .carousel-caption h3 {
   color: $green-darker;
-  font-size: 2.5em;
   font-weight: 600;
   text-shadow: none;
 }
@@ -112,6 +111,27 @@ section {
 #item_stress .carousel-caption h3 {
   text-align: left;
 }
+@media (min-width: 768px) {
+  .carousel-caption {
+    top: 20px;
+    width: 40%;
+  }
+  #item_chronic_pain .carousel-caption {
+    left: 40%;
+  }
+  .carousel-caption h3 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-caption h3 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1200px) {
+
+}
+
 .section-title {
   font-size: 36px;
   font-weight: 600;
