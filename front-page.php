@@ -55,11 +55,11 @@ get_header(); ?>
       <div class="container">
         <div class="row">
 
-          <h2 class="section-title">Meet Gil</h2>
+          <h2 class="col-xs-12 section-title">Meet Gil</h2>
 
-          <a class="btn btn-green-dark topright">Learn More</a>
+          <a class="btn btn-green-dark btn-top-right">Learn More</a>
 
-          <div class="image col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gil-wette.jpg"></div>
+          <div class="col-md-4 image"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gil-wette.jpg"></div>
 
           <div class="col-md-8">
             <p>Licensed Physical Therapist since 1994</p>
@@ -77,33 +77,35 @@ get_header(); ?>
       <div class="container">
         <div class="row">
 
-          <h2 class="section-title">What to Expect</h2>
+          <h2 class="col-xs-12 section-title">What to Expect</h2>
 
-          <div class="row">
-            <div class="image col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Manual+Therapy+icon"></div>
-            <div class="col-md-8">
-              <p>
-                <p class="callout-header">Manual Therapy</p>
-                Pain-free hands-on work to help get your healing back in swing
-              </p>
+          <div class="container">
+            <div class="row">
+              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Manual+Therapy+icon"></div>
+              <div class="col-xs-12 col-md-8">
+                <p>
+                  <p class="callout-header">Manual Therapy</p>
+                  Pain-free hands-on work to help get your healing back in swing
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="image col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Exercise+icon"></div>
-            <div class="col-md-8">
-              <p>
-                <p class="callout-header">Exercise</p>
-                For flowing, integrated, powerful movement
-              </p>
+            <div class="row">
+              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Exercise+icon"></div>
+              <div class="col-xs-12 col-md-8">
+                <p>
+                  <p class="callout-header">Exercise</p>
+                  For flowing, integrated, powerful movement
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="image col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Education+icon"></div>
-            <div class="col-md-8">
-              <p>
-                <p class="callout-header">Education</p>
-                Learn how the process of healing occurs so that you can support your process of recovery
-              </p>
+            <div class="row">
+              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Education+icon"></div>
+              <div class="col-xs-12 col-md-8">
+                <p>
+                  <p class="callout-header">Education</p>
+                  Learn how the process of healing occurs so that you can support your process of recovery
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -113,7 +115,7 @@ get_header(); ?>
     <section id="aspen-trees" class="bg-green-light">
       <div class="container">
         <div class="row">
-          <h2 class="section-title">The Aspen Trees</h2>
+          <h2 class="col-xs-12 section-title">The Aspen Trees</h2>
 
           <div class="image col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/aspen-trees.jpg"></div>
 
@@ -136,9 +138,9 @@ get_header(); ?>
     <section id="conditions-treated" class="bg-green-dark">
       <div class="container">
         <div class="row">
-          <h2 class="section-title">Conditions Treated</h2>
+          <h2 class="col-xs-12 section-title">Conditions Treated</h2>
 
-          <div class="col-md-4">
+          <div class="col-xs-12 col-md-4">
             <ul class="condition-list">
               <li class="condition-item">Back</li>
               <li class="condition-item">Neck</li>
@@ -147,7 +149,7 @@ get_header(); ?>
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-xs-12 col-md-4">
             <ul class="condition-list">
               <li class="condition-item">Chronic fatigue</li>
               <li class="condition-item">Chronic illness</li>
@@ -155,7 +157,7 @@ get_header(); ?>
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-xs-12 col-md-4">
             <ul class="condition-list">
               <li class="condition-item">Stress Relief</li>
               <li class="condition-item">Improved Sleep</li>

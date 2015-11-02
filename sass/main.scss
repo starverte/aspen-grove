@@ -79,10 +79,6 @@ section {
 }
 .alignnone {
 }
-.topright {
-  float: right;
-  margin-top: -3.5em;
-}
 
 
 /* =Front Page
@@ -124,6 +120,9 @@ section {
 }
 #what-to-expect img {
   margin-bottom: 20px;
+}
+.condition-list {
+  padding-left: 0;
 }
 
 
@@ -405,4 +404,9 @@ fieldset[disabled] .btn-green-dark.active {
 .btn-green-dark .badge {
   color: #367024;
   background-color: #fff;
+}
+.btn-top-right {
+  float: right;
+  margin-top: -3.5em;
+  margin-right: 15px;
 }
