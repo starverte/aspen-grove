@@ -17,7 +17,6 @@ get_header(); ?>
         <li data-target="#carousel-aspen-grove" data-slide-to="1"></li>
         <li data-target="#carousel-aspen-grove" data-slide-to="2"></li>
         <li data-target="#carousel-aspen-grove" data-slide-to="3"></li>
-        <li data-target="#carousel-aspen-grove" data-slide-to="4"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -26,16 +25,13 @@ get_header(); ?>
           <img src="http://placehold.it/3840x1500?text=Slide+1">
         </div>
         <div class="item">
-          <img src="http://placehold.it/3840x1500?text=Slide+2">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/chronic-pain.png">
         </div>
         <div class="item">
-          <img src="http://placehold.it/3840x1500?text=Slide+3">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/painful-treatments.png">
         </div>
         <div class="item">
-          <img src="http://placehold.it/3840x1500?text=Slide+4">
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/3840x1500?text=Slide+5">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/stress.png">
         </div>
       </div>
 
