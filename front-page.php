@@ -90,7 +90,7 @@ get_header(); ?>
 
           <div class="container">
             <div class="row">
-              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Manual+Therapy+icon"></div>
+              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/manual-therapy-icon.png"></div>
               <div class="col-xs-12 col-md-8">
                 <p>
                   <p class="callout-header">Manual Therapy</p>
@@ -99,7 +99,7 @@ get_header(); ?>
               </div>
             </div>
             <div class="row">
-              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Exercise+icon"></div>
+              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/exercise-icon.png"></div>
               <div class="col-xs-12 col-md-8">
                 <p>
                   <p class="callout-header">Exercise</p>
@@ -108,7 +108,7 @@ get_header(); ?>
               </div>
             </div>
             <div class="row">
-              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Education+icon"></div>
+              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/education-icon.png"></div>
               <div class="col-xs-12 col-md-8">
                 <p>
                   <p class="callout-header">Education</p>
