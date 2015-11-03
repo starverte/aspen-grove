@@ -93,7 +93,7 @@ get_header(); ?>
               <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/manual-therapy-icon.png"></div>
               <div class="col-xs-12 col-md-8">
                 <p>
-                  <p class="callout-header"><a href="<?php esc_url_e( home_url() ); ?>/manual-therapy">Manual Therapy</a></p>
+                  <p class="callout-header"><a href="<?php echo esc_url( home_url() ); ?>/manual-therapy">Manual Therapy</a></p>
                   Pain-free hands-on work to help get your healing back in swing
                 </p>
               </div>
@@ -102,7 +102,7 @@ get_header(); ?>
               <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/exercise-icon.png"></div>
               <div class="col-xs-12 col-md-8">
                 <p>
-                  <p class="callout-header"><a href="<?php esc_url_e( home_url() ); ?>/exercise">Exercise</a></p>
+                  <p class="callout-header"><a href="<?php echo esc_url( home_url() ); ?>/exercise">Exercise</a></p>
                   For flowing, integrated, powerful movement
                 </p>
               </div>
