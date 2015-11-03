@@ -111,7 +111,7 @@ get_header(); ?>
               <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/education-icon.png"></div>
               <div class="col-xs-12 col-md-8">
                 <p>
-                  <p class="callout-header">Education</p>
+                  <p class="callout-header"><a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Education</a></p>
                   Learn how the process of healing occurs so that you can support your process of recovery
                 </p>
               </div>
