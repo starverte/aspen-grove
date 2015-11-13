@@ -10,14 +10,8 @@
 get_header(); ?>
 <?php flint_get_sidebar('header'); ?>
 
-    <div id="carousel-aspen-grove" class="carousel slide" data-ride="carousel">
+    <div id="carousel-aspen-grove-banners" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-aspen-grove" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-aspen-grove" data-slide-to="1"></li>
-        <li data-target="#carousel-aspen-grove" data-slide-to="2"></li>
-        <li data-target="#carousel-aspen-grove" data-slide-to="3"></li>
-      </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
@@ -47,16 +41,6 @@ get_header(); ?>
           </div>
         </div>
       </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-aspen-grove" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-aspen-grove" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
 
     <section id="meet-gil" class="bg-green-light">
@@ -147,34 +131,52 @@ get_header(); ?>
     <section id="conditions-treated" class="bg-green-dark">
       <div class="container">
         <div class="row">
-          <h2 class="col-xs-12 section-title">Conditions Treated</h2>
+          <h2 class="col-xs-12 section-title">Services Provided</h2>
 
-          <div class="col-xs-12 col-md-4">
-            <ul class="condition-list">
-              <li class="condition-item">Back</li>
-              <li class="condition-item">Neck</li>
-              <li class="condition-item">Joints<br>
-                <span class="condition-desc">arms, legs, and anything in between</span></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-12 col-md-4">
-            <ul class="condition-list">
-              <li class="condition-item">Chronic fatigue</li>
-              <li class="condition-item">Chronic illness</li>
-              <li class="condition-item">Autoimmune</li>
-            </ul>
-          </div>
-
-          <div class="col-xs-12 col-md-4">
-            <ul class="condition-list">
-              <li class="condition-item">Stress Relief</li>
-              <li class="condition-item">Improved Sleep</li>
-            </ul>
+          <div id="carousel-aspen-grove-services" class="col-xs-12 carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-aspen-grove-services" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-aspen-grove-services" data-slide-to="1"></li>
+              <li data-target="#carousel-aspen-grove-services" data-slide-to="2"></li>
+              <li data-target="#carousel-aspen-grove-services" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active" id="item_recovery">
+                <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-xs.png">
+                <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-sm.png">
+                <div class="carousel-caption">
+                  <h3>Recovery from painful and limiting conditions of the body: back, neck, head, arms, and legs</h3>
+                </div>
+              </div>
+              <div class="item" id="item_treatment">
+                <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-xs.png">
+                <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-sm.png">
+                <div class="carousel-caption">
+                  <h3>Treatment of chronic and complex conditions, including chronic pain, chronic fatigue, and multiple injuries</h3>
+                </div>
+              </div>
+              <div class="item" id="item_support">
+                <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-xs.png">
+                <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-sm.png">
+                <div class="carousel-caption">
+                  <h3>Support for atheletes—whether student, recreational, or competitive—for both injury recovery and performance enhancement</h3>
+                </div>
+              </div>
+              <div class="item" id="item_stress_mgmt">
+                <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-xs.png">
+                <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-sm.png">
+                <div class="carousel-caption">
+                  <h3>Stress management: both improving your ability to relax and coaching your movements to avoid becoming so stressed</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+
 
     <section id="other" class="bg-green-light">
       <div class="container">
