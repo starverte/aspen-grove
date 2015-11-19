@@ -50,7 +50,7 @@ get_header(); ?>
 
           <h2 class="col-xs-12 section-title">Meet Gil</h2>
 
-          <a class="btn btn-green-dark btn-top-right">Learn More</a>
+          <a class="btn btn-green-dark btn-top-right" href="<?php echo esc_url( home_url() ); ?>/meet-gil">Learn More</a>
 
           <div class="col-md-4 image"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gil-wette.jpg"></div>
 
