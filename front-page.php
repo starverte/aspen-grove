@@ -48,9 +48,11 @@ get_header(); ?>
       <div class="container">
         <div class="row">
 
-          <h2 class="col-xs-12 section-title">Meet Gil</h2>
+          <h2 class="col-xs-12 col-md-10 section-title">Meet Gil</h2>
 
-          <a class="btn btn-green-dark btn-top-right" href="<?php echo esc_url( home_url() ); ?>/meet-gil">Learn More</a>
+          <div class="hidden-xs hidden-sm col-md-2">
+            <a class="btn btn-green-dark btn-block" href="<?php echo esc_url( home_url() ); ?>/meet-gil" style="margin-top:20px">Learn More</a>
+          </div>
 
           <div class="col-md-4 image"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gil-wette.jpg"></div>
 
@@ -58,6 +60,10 @@ get_header(); ?>
             <p>Licensed Physical Therapist since 1994</p>
             <p>Certified Practitioner: Lower Systems - Dynamic Manual Interface</p>
             <p>Background in Tai Chi and Aikido</p>
+          </div>
+
+          <div class="hidden-md hidden-lg col-xs-12">
+            <a class="btn btn-green-dark btn-block" href="<?php echo esc_url( home_url() ); ?>/meet-gil">Learn More</a>
           </div>
 
         </div>
