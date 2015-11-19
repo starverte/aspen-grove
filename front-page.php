@@ -86,7 +86,7 @@ get_header(); ?>
               <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/exercise-icon.png"></div>
               <div class="col-xs-12 col-md-8">
                 <p>
-                  <p class="callout-header"><a href="<?php echo esc_url( home_url() ); ?>/exercise">Exercise</a></p>
+                  <p class="callout-header"><a href="<?php echo esc_url( home_url() ); ?>/exercise">Movement Therapy and Exercise</a></p>
                   For flowing, integrated, powerful movement
                 </p>
               </div>
