@@ -122,6 +122,19 @@ section {
     font-size: 30px;
     text-align: left;
   }
+  .item {
+    min-height: 350px;
+  }
+  @media (min-width: 375px) {
+    .item {
+      min-height: inherit;
+    }
+  }
+  @media (min-width: 768px) {
+    .item {
+      min-height: 150px;
+    }
+  }
 }
 
 .section-title {
