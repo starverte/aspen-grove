@@ -58,7 +58,7 @@ get_header(); ?>
 
           <div class="col-md-8">
             <p>Licensed Physical Therapist since 1994</p>
-            <p>Certified Practitioner: Lower Systems - Dynamic Manual Interface</p>
+            <p>Certified Practitioner: Lowen Systems - Dynamic Manual Interface</p>
             <p>Background in Tai Chi and Aikido</p>
           </div>
 
