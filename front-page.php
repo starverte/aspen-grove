@@ -10,44 +10,37 @@
 get_header(); ?>
 <?php flint_get_sidebar('header'); ?>
 
-    <div id="carousel-aspen-grove" class="carousel slide" data-ride="carousel">
+    <div id="carousel-aspen-grove-banners" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-aspen-grove" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-aspen-grove" data-slide-to="1"></li>
-        <li data-target="#carousel-aspen-grove" data-slide-to="2"></li>
-        <li data-target="#carousel-aspen-grove" data-slide-to="3"></li>
-        <li data-target="#carousel-aspen-grove" data-slide-to="4"></li>
-      </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="http://placehold.it/3840x1500?text=Slide+1">
+          <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-xs.png">
+          <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-sm.png">
         </div>
-        <div class="item">
-          <img src="http://placehold.it/3840x1500?text=Slide+2">
+        <div class="item" id="item_chronic_pain">
+          <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chronic-pain-xs.png">
+          <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/chronic-pain-sm.png">
+          <div class="carousel-caption">
+            <h3>Do you have a chronic or complex condition that just isn't improving as you'd like?</h3>
+          </div>
         </div>
-        <div class="item">
-          <img src="http://placehold.it/3840x1500?text=Slide+3">
+        <div class="item" id="item_painful_treatments">
+          <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painful-treatments-xs.png">
+          <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/painful-treatments-sm.png">
+          <div class="carousel-caption">
+            <h3>Are you tired and frustrated with painful treatments that aren't helping?</h3>
+          </div>
         </div>
-        <div class="item">
-          <img src="http://placehold.it/3840x1500?text=Slide+4">
-        </div>
-        <div class="item">
-          <img src="http://placehold.it/3840x1500?text=Slide+5">
+        <div class="item" id="item_stress">
+          <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/stress-xs.png">
+          <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/stress-sm.png">
+          <div class="carousel-caption">
+            <h3>Are you looking to decrease your level of stress and deal with your stress better?</h3>
+          </div>
         </div>
       </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-aspen-grove" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-aspen-grove" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
 
     <section id="meet-gil" class="bg-green-light">
@@ -55,16 +48,22 @@ get_header(); ?>
       <div class="container">
         <div class="row">
 
-          <h2 class="section-title">Meet Gil</h2>
+          <h2 class="col-xs-12 col-md-10 section-title">Meet Gil</h2>
 
-          <a class="btn btn-green-dark topright">Learn More</a>
+          <div class="hidden-xs hidden-sm col-md-2">
+            <a class="btn btn-green-dark btn-block" href="<?php echo esc_url( home_url() ); ?>/meet-gil" style="margin-top:20px">Learn More</a>
+          </div>
 
-          <div class="image col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gil-wette.jpg"></div>
+          <div class="col-md-4 image"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gil-wette.jpg"></div>
 
           <div class="col-md-8">
             <p>Licensed Physical Therapist since 1994</p>
-            <p>Certified Practitioner: Lower Systems - Dynamic Manual Interface</p>
+            <p>Certified Practitioner: Lowen Systems - Dynamic Manual Interface</p>
             <p>Background in Tai Chi and Aikido</p>
+          </div>
+
+          <div class="hidden-md hidden-lg col-xs-12">
+            <a class="btn btn-green-dark btn-block" href="<?php echo esc_url( home_url() ); ?>/meet-gil">Learn More</a>
           </div>
 
         </div>
@@ -77,33 +76,35 @@ get_header(); ?>
       <div class="container">
         <div class="row">
 
-          <h2 class="section-title">What to Expect</h2>
+          <h2 class="col-xs-12 section-title">What to Expect</h2>
 
-          <div class="row">
-            <div class="image col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Manual+Therapy+icon"></div>
-            <div class="col-md-8">
-              <p>
-                <p class="callout-header">Manual Therapy</p>
-                Pain-free hands-on work to help get your healing back in swing
-              </p>
+          <div class="container">
+            <div class="row">
+              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/manual-therapy-icon.png"></div>
+              <div class="col-xs-12 col-md-8">
+                <p>
+                  <p class="callout-header"><a href="<?php echo esc_url( home_url() ); ?>/manual-therapy">Manual Therapy</a></p>
+                  Pain-free hands-on work to help get your healing back in swing
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="image col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Exercise+icon"></div>
-            <div class="col-md-8">
-              <p>
-                <p class="callout-header">Exercise</p>
-                For flowing, integrated, powerful movement
-              </p>
+            <div class="row">
+              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/exercise-icon.png"></div>
+              <div class="col-xs-12 col-md-8">
+                <p>
+                  <p class="callout-header"><a href="<?php echo esc_url( home_url() ); ?>/exercise">Movement Therapy and Exercise</a></p>
+                  For flowing, integrated, powerful movement
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="image col-md-4"><img style="border-radius:50%;" src="http://placehold.it/600?text=Education+icon"></div>
-            <div class="col-md-8">
-              <p>
-                <p class="callout-header">Education</p>
-                Learn how the process of healing occurs so that you can support your process of recovery
-              </p>
+            <div class="row">
+              <div class="image col-xs-12 col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/education-icon.png"></div>
+              <div class="col-xs-12 col-md-8">
+                <p>
+                  <p class="callout-header"><a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Education</a></p>
+                  Learn how the process of healing occurs so that you can support your process of recovery
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -113,7 +114,7 @@ get_header(); ?>
     <section id="aspen-trees" class="bg-green-light">
       <div class="container">
         <div class="row">
-          <h2 class="section-title">The Aspen Trees</h2>
+          <h2 class="col-xs-12 section-title">The Aspen Trees</h2>
 
           <div class="image col-md-4"><img style="border-radius:50%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/aspen-trees.jpg"></div>
 
@@ -136,34 +137,52 @@ get_header(); ?>
     <section id="conditions-treated" class="bg-green-dark">
       <div class="container">
         <div class="row">
-          <h2 class="section-title">Conditions Treated</h2>
+          <h2 class="col-xs-12 section-title">Services Provided</h2>
 
-          <div class="col-md-4">
-            <ul class="condition-list">
-              <li class="condition-item">Back</li>
-              <li class="condition-item">Neck</li>
-              <li class="condition-item">Joints<br>
-                <span class="condition-desc">arms, legs, and anything in between</span></li>
-            </ul>
-          </div>
-
-          <div class="col-md-4">
-            <ul class="condition-list">
-              <li class="condition-item">Chronic fatigue</li>
-              <li class="condition-item">Chronic illness</li>
-              <li class="condition-item">Autoimmune</li>
-            </ul>
-          </div>
-
-          <div class="col-md-4">
-            <ul class="condition-list">
-              <li class="condition-item">Stress Relief</li>
-              <li class="condition-item">Improved Sleep</li>
-            </ul>
+          <div id="carousel-aspen-grove-services" class="col-xs-12 carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-aspen-grove-services" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-aspen-grove-services" data-slide-to="1"></li>
+              <li data-target="#carousel-aspen-grove-services" data-slide-to="2"></li>
+              <li data-target="#carousel-aspen-grove-services" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active" id="item_recovery">
+                <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-xs.png">
+                <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-sm.png">
+                <div class="carousel-caption">
+                  <h3>Recovery from painful and limiting conditions of the body: back, neck, head, arms, and legs</h3>
+                </div>
+              </div>
+              <div class="item" id="item_treatment">
+                <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-xs.png">
+                <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-sm.png">
+                <div class="carousel-caption">
+                  <h3>Treatment of chronic and complex conditions, including chronic pain, chronic fatigue, and multiple injuries</h3>
+                </div>
+              </div>
+              <div class="item" id="item_support">
+                <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-xs.png">
+                <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-sm.png">
+                <div class="carousel-caption">
+                  <h3>Support for atheletes—whether student, recreational, or competitive—for both injury recovery and performance enhancement</h3>
+                </div>
+              </div>
+              <div class="item" id="item_stress_mgmt">
+                <img class="hidden-sm hidden-md hidden-lg" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-xs.png">
+                <img class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blank-sm.png">
+                <div class="carousel-caption">
+                  <h3>Stress management: both improving your ability to relax and coaching your movements to avoid becoming so stressed</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+
 
     <section id="other" class="bg-green-light">
       <div class="container">

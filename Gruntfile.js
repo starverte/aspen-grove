@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             'License URI: LICENSE.md\n' +
             'Tags:\n' +
             'Template: flint\n' +
-            'Template Version: 1.3.9\n\n' +
+            'Template Version: 1.5.0\n\n' +
             '    Copyright 2015 Star Verte LLC (email : dev@starverte.com)\n\n' +
             '    This program is free software: you can redistribute it and/or modify\n' +
             '    it under the terms of the GNU General Public License as published by\n' +

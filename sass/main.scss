@@ -1,32 +1,8 @@
-/*
-Theme Name: Aspen Grove
-Theme URI: https://github.com/starverte/aspen-grove.git
-Author: Star Verte LLC
-Description: Child theme of Flint. Theme originally developed for Wette Integrative Therapy Inc. for a physical therapy practice website.
-Version: 0.1.0
-License: GPLv3
-License URI: LICENSE.md
-Tags:
-Template: flint
-Template Version: 1.5.0
-
-    Copyright 2015 Star Verte LLC (email : dev@starverte.com)
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 @import url(../flint/style.css);
+
+$green-dark: #367024;
+$green-darker: #2a581c;
+$green-light: #fafcf9;
 
 /* =Global
 ----------------------------------------------- */
@@ -79,26 +55,95 @@ section {
 }
 .alignnone {
 }
-.topright {
-  float: right;
-  margin-top: -3.5em;
-}
 
 
 /* =Front Page
 ----------------------------------------------- */
 
+#carousel-aspen-grove-banners {
+  .carousel-caption {
+    padding-bottom: 0;
+    bottom: auto;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    width: 60%;
+  }
+  #item_stress .carousel-caption {
+    left: 30%;
+  }
+  .carousel-caption h3 {
+    color: $green-darker;
+    font-weight: 600;
+    text-shadow: none;
+    margin-top: 0;
+  }
+  #item_stress .carousel-caption h3 {
+    text-align: right;
+  }
+  #item_painful_treatments .carousel-caption h3 {
+    text-align: left;
+  }
+  #item_chronic_pain .carousel-caption h3 {
+    text-align: left;
+  }
+  @media (min-width: 768px) {
+    .carousel-caption {
+      top: 20px;
+      width: 50%;
+    }
+    #item_stress .carousel-caption {
+      left: 40%;
+    }
+    .carousel-caption h3 {
+      font-size: 2em;
+    }
+  }
+  @media (min-width: 992px) {
+    .carousel-caption h3 {
+      font-size: 2.5em;
+    }
+  }
+}
+#carousel-aspen-grove-services {
+  .carousel-caption {
+    padding-bottom: 0;
+    padding-top: 0;
+    bottom: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .carousel-caption h3 {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: none;
+    margin-top: 0;
+    font-size: 30px;
+    text-align: left;
+  }
+  .item {
+    min-height: 350px;
+  }
+  @media (min-width: 375px) {
+    .item {
+      min-height: inherit;
+    }
+  }
+  @media (min-width: 768px) {
+    .item {
+      min-height: 150px;
+    }
+  }
+}
+
 .section-title {
   font-size: 36px;
   font-weight: 600;
 }
-.condition-item {
-  font-size: 27px;
-  font-weight: 400;
-  text-align: center;
-  list-style: none;
-}
-.condition-desc, .aspen-text, .address, .contact-labels {
+.aspen-text,
+.address,
+.contact-labels {
   font-size: 21px;
   font-weight: 400;
 }
@@ -106,13 +151,33 @@ section {
   font-size: 30px;
   font-weight: 600;
 }
+.callout-header a {
+  color: inherit;
+}
+.callout-header a:hover {
+  color: inherit;
+}
+.callout-header a:after {
+  content: "\e144";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.75em;
+  left: 5px;
+}
 .bg-green-light {
-  color: #2a581c;
-  background-color: #fafcf9;
+  color: $green-darker;
+  background-color: $green-light;
 }
 .bg-green-dark {
   color: #fff;
-  background-color: #367024;
+  background-color: $green-dark;
 }
 .row {
   margin-right: none;
@@ -342,7 +407,7 @@ fieldset[disabled] .navbar-aspen-grove .btn-link:focus {
 
 .btn-green-dark {
   color: #fff;
-  background-color: #367024;
+  background-color: $green-dark;
   border-color: #2d5d1e;
 }
 .btn-green-dark:focus,
@@ -399,10 +464,15 @@ fieldset[disabled] .btn-green-dark:active,
 .btn-green-dark.disabled.active,
 .btn-green-dark[disabled].active,
 fieldset[disabled] .btn-green-dark.active {
-  background-color: #367024;
+  background-color: $green-dark;
   border-color: #2d5d1e;
 }
 .btn-green-dark .badge {
-  color: #367024;
+  color: $green-dark;
   background-color: #fff;
+}
+.btn-top-right {
+  float: right;
+  margin-top: -3.5em;
+  margin-right: 15px;
 }
