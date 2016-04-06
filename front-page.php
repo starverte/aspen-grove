@@ -194,29 +194,7 @@ get_header(); ?>
           </div>
           <div class="col-md-4">
             <h2 class="section-title">Contact</h2>
-            <div id="contact-form-6">
-              <form action="http://witi.dev/?page_id=6#contact-form-6" class="contact-form commentsblock" method="post">
-                <div>
-                  <label class="grunion-field-label name" for="g6-name">Name*</label> <input class="name" id="g6-name" name="g6-name" required="" type="text" value="">
-                </div>
-
-                <div>
-                  <label class="grunion-field-label email" for="g6-email">Email*</label> <input class="email" id="g6-email" name="g6-email" required="" type="email" value="">
-                </div>
-
-                <div>
-                  <label class="grunion-field-label url" for="g6-website">Website</label> <input class="url" id="g6-website" name="g6-website" type="text" value="">
-                </div>
-
-                <div>
-                  <label class="grunion-field-label textarea" for="contact-form-comment-g6-comment">Comment*</label>
-                  <textarea id="contact-form-comment-g6-comment" name="g6-comment" required="" rows="5" spellcheck="false" style="background-color: transparent !important; z-index: auto; position: relative; line-height: 20px; font-size: 14px; -webkit-transition: none; transition: none; overflow: auto; background-position: initial initial !important; background-repeat: initial initial !important;">
-            </textarea>
-                </div>
-
-                <p class="contact-submit"><input class="pushbutton-wide" type="submit" value="Submit »"> <input id="_wpnonce" name="_wpnonce" type="hidden" value="1269072358"><input name="_wp_http_referer" type="hidden" value="/?page_id=6&amp;preview=true"> <input name="contact-form-id" type="hidden" value="6"> <input name="action" type="hidden" value="grunion-contact-form"></p>
-              </form>
-            </div>
+            <?php echo do_shortcode( "[contact-form to='mbeall@starverte.com,gil@gilwette.com' subject='Contact Form'][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Comment' type='textarea' required='1'/][/contact-form]" ); ?>
           </div>
           <div class="col-md-4">
           </div>
@@ -227,4 +205,3 @@ get_header(); ?>
 
 <?php flint_get_sidebar('footer'); ?>
 <?php get_footer(); ?>
-

@@ -1,6 +1,6 @@
 {
   "name": "aspen-grove",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Child theme of Flint. Theme originally developed for Wette Integrative Therapy Inc. for a physical therapy practice website.",
   "main": "style.css",
   "scripts": {
