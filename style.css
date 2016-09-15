@@ -1,0 +1,462 @@
+/*
+Theme Name: Aspen Grove
+Theme URI: https://github.com/starverte/aspen-grove.git
+Author: Star Verte LLC
+Description: Child theme of Flint. Theme originally developed for Wette Integrative Therapy Inc. for a physical therapy practice website.
+Version: 0.2.2
+License: GPLv3
+License URI: LICENSE.md
+Tags:
+Template: flint
+Template Version: 1.5.0
+
+    Copyright 2015 Star Verte LLC (email : dev@starverte.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+@import url(../flint/style.css);
+/* =Global
+----------------------------------------------- */
+body {
+  padding-top: 0;
+}
+
+section {
+  padding-bottom: 20px; 
+  overflow: auto;
+  font-size: 27px;
+}
+
+/* Alignment */
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+/* =Front Page
+----------------------------------------------- */
+#carousel-aspen-grove-banners .carousel-caption {
+  top: 0;
+  right: 10%;
+  bottom: auto;
+  left: 10%;
+  width: 60%; 
+  padding-bottom: 0;
+}
+#carousel-aspen-grove-banners #item_stress .carousel-caption {
+  left: 30%;
+}
+#carousel-aspen-grove-banners .carousel-caption h3 {
+  margin-top: 0; 
+  font-weight: 600;
+  color: #2a581c;
+  text-shadow: none;
+}
+#carousel-aspen-grove-banners #item_stress .carousel-caption h3 {
+  text-align: right;
+}
+#carousel-aspen-grove-banners #item_painful_treatments .carousel-caption h3 {
+  text-align: left;
+}
+#carousel-aspen-grove-banners #item_chronic_pain .carousel-caption h3 {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  #carousel-aspen-grove-banners .carousel-caption {
+    top: 20px;
+    width: 50%;
+  }
+  #carousel-aspen-grove-banners #item_stress .carousel-caption {
+    left: 40%;
+  }
+  #carousel-aspen-grove-banners .carousel-caption h3 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 992px) {
+  #carousel-aspen-grove-banners .carousel-caption h3 {
+    font-size: 2.5em;
+  }
+}
+
+#carousel-aspen-grove-services .carousel-caption {
+  top: 0;
+  right: 0; 
+  bottom: auto;
+  left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#carousel-aspen-grove-services .carousel-caption h3 {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left; 
+  text-shadow: none;
+}
+#carousel-aspen-grove-services .item {
+  min-height: 350px;
+}
+@media (min-width: 375px) {
+  #carousel-aspen-grove-services .item {
+    min-height: inherit;
+  }
+}
+@media (min-width: 768px) {
+  #carousel-aspen-grove-services .item {
+    min-height: 150px;
+  }
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.aspen-text,
+.address,
+.contact-labels {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.callout-header {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.callout-header a {
+  color: inherit;
+}
+
+.callout-header a:hover {
+  color: inherit;
+}
+
+.callout-header a:after {
+  position: relative;
+  top: 1px;
+  left: 5px; 
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  content: "\e144";
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-green-light {
+  color: #2a581c;
+  background-color: #fafcf9;
+}
+
+.bg-green-dark {
+  color: #fff;
+  background-color: #367024;
+}
+
+.row {
+  margin-right: none;
+  margin-left: none;
+}
+
+.carousel img {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#what-to-expect img {
+  margin-bottom: 20px;
+}
+
+/* =Header
+----------------------------------------------- */
+/* =Content
+----------------------------------------------- */
+.grunion-field-label {
+  font-size: initial;
+}
+
+/* =Media
+----------------------------------------------- */
+/* =Navigation
+----------------------------------------------- */
+.navbar {
+  min-height: 70px;
+  margin-bottom: 0;
+}
+
+.navbar-aspen-grove {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+.navbar-aspen-grove .navbar-brand {
+  height: 70px;
+  color: #777;
+}
+
+.navbar-aspen-grove .navbar-brand:hover,
+.navbar-aspen-grove .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+
+.navbar-aspen-grove .navbar-text {
+  color: #777;
+}
+
+.navbar-aspen-grove .navbar-nav > li > a {
+  color: #777;
+}
+
+.navbar-aspen-grove .navbar-nav > li > a:hover,
+.navbar-aspen-grove .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+
+.navbar-aspen-grove .navbar-nav > .active > a,
+.navbar-aspen-grove .navbar-nav > .active > a:hover,
+.navbar-aspen-grove .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.navbar-aspen-grove .navbar-nav > .disabled > a,
+.navbar-aspen-grove .navbar-nav > .disabled > a:hover,
+.navbar-aspen-grove .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+
+.navbar-aspen-grove .navbar-toggle {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  border-color: #ddd;
+}
+
+.navbar-aspen-grove .navbar-toggle:hover,
+.navbar-aspen-grove .navbar-toggle:focus {
+  background-color: #ddd;
+}
+
+.navbar-aspen-grove .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-aspen-grove .navbar-collapse,
+.navbar-aspen-grove .navbar-form {
+  border-color: #e7e7e7;
+}
+
+.navbar-aspen-grove .navbar-nav > .open > a,
+.navbar-aspen-grove .navbar-nav > .open > a:hover,
+.navbar-aspen-grove .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+  .navbar-aspen-grove .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+
+  .navbar-aspen-grove .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-aspen-grove .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+
+  .navbar-aspen-grove .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-aspen-grove .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-aspen-grove .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+
+  .navbar-aspen-grove .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-aspen-grove .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-aspen-grove .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-aspen-grove .navbar-link {
+  color: #777;
+}
+
+.navbar-aspen-grove .navbar-link:hover {
+  color: #333;
+}
+
+.navbar-aspen-grove .btn-link {
+  color: #777;
+}
+
+.navbar-aspen-grove .btn-link:hover,
+.navbar-aspen-grove .btn-link:focus {
+  color: #333;
+}
+
+.navbar-aspen-grove .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-aspen-grove .btn-link:hover,
+.navbar-aspen-grove .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-aspen-grove .btn-link:focus {
+  color: #ccc;
+}
+
+.navbar-aspen-grove img {
+  width: auto;
+  max-height: 45px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    min-height: 90px;
+  }
+
+  .navbar-aspen-grove .navbar-brand {
+    height: 90px;
+  }
+
+  .navbar-aspen-grove .navbar-nav,
+  .navbar-aspen-grove .navbar-right {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar-aspen-grove img {
+    max-height: 65px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100px;
+  }
+
+  .navbar-aspen-grove .navbar-brand {
+    height: 100px;
+  }
+
+  .navbar-aspen-grove .navbar-nav,
+  .navbar-aspen-grove .navbar-right {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .navbar-aspen-grove img {
+    max-height: 75px;
+  }
+}
+/* =Comments
+----------------------------------------------- */
+/* =Widgets
+----------------------------------------------- */
+/* =Footer
+----------------------------------------------- */
+/* =Buttons
+----------------------------------------------- */
+.btn-green-dark {
+  color: #fff;
+  background-color: #367024;
+  border-color: #2d5d1e;
+}
+
+.btn-green-dark:focus,
+.btn-green-dark.focus {
+  color: #fff;
+  background-color: #234918;
+  border-color: #000;
+}
+
+.btn-green-dark:hover {
+  color: #fff;
+  background-color: #234918;
+  border-color: #162e0f;
+}
+
+.btn-green-dark:active,
+.btn-green-dark.active,
+.open > .dropdown-toggle.btn-green-dark {
+  color: #fff;
+  background-color: #234918;
+  border-color: #162e0f;
+}
+
+.btn-green-dark:active:hover,
+.btn-green-dark.active:hover,
+.open > .dropdown-toggle.btn-green-dark:hover,
+.btn-green-dark:active:focus,
+.btn-green-dark.active:focus,
+.open > .dropdown-toggle.btn-green-dark:focus,
+.btn-green-dark:active.focus,
+.btn-green-dark.active.focus,
+.open > .dropdown-toggle.btn-green-dark.focus {
+  color: #fff;
+  background-color: #162e0f;
+  border-color: #000;
+}
+
+.btn-green-dark:active,
+.btn-green-dark.active,
+.open > .dropdown-toggle.btn-green-dark {
+  background-image: none;
+}
+
+.btn-green-dark.disabled,
+.btn-green-dark[disabled],
+fieldset[disabled] .btn-green-dark,
+.btn-green-dark.disabled:hover,
+.btn-green-dark[disabled]:hover,
+fieldset[disabled] .btn-green-dark:hover,
+.btn-green-dark.disabled:focus,
+.btn-green-dark[disabled]:focus,
+fieldset[disabled] .btn-green-dark:focus,
+.btn-green-dark.disabled.focus,
+.btn-green-dark[disabled].focus,
+fieldset[disabled] .btn-green-dark.focus,
+.btn-green-dark.disabled:active,
+.btn-green-dark[disabled]:active,
+fieldset[disabled] .btn-green-dark:active,
+.btn-green-dark.disabled.active,
+.btn-green-dark[disabled].active,
+fieldset[disabled] .btn-green-dark.active {
+  background-color: #367024;
+  border-color: #2d5d1e;
+}
+
+.btn-green-dark .badge {
+  color: #367024;
+  background-color: #fff;
+}
+
+.btn-top-right {
+  float: right;
+  margin-top: -3.5em;
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */
