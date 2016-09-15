@@ -182,21 +182,27 @@ get_header(); ?>
       </div>
     </section>
 
-
-
     <section id="other" class="bg-green-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-xs-12 col-md-4">
             <h2 class="section-title">Office</h2>
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/office.png">
             <p class="address">107 Peterson St<br>Fort Collins, CO 80524</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-xs-12 col-md-4 col-md-offset-4">
             <h2 class="section-title">Contact</h2>
-            <?php echo do_shortcode( "[contact-form to='mbeall@starverte.com,gil@gilwette.com' subject='Contact Form'][contact-field label='Name' type='name' required='1'/][contact-field label='Email' type='email' required='1'/][contact-field label='Comment' type='textarea' required='1'/][/contact-form]" ); ?>
-          </div>
-          <div class="col-md-4">
+              <?php
+                query_posts( array( 'page_id' => 151 ) );
+
+                if ( have_posts() ) {
+                  while ( have_posts() ) {
+                    the_post();
+                    the_content();
+                  }
+                }
+                wp_reset_query();
+              ?>
           </div>
         </div>
       </div>
