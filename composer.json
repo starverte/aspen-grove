@@ -1,0 +1,17 @@
+{
+  "name": "starverte/aspen-grove",
+  "version": "0.2.2",
+  "description": "Child theme of Flint. Theme originally developed for Wette Integrative Therapy Inc. for a physical therapy practice website.",
+  "license": "GPLv3",
+  "authors": [
+    {
+      "name": "Star Verte LLC",
+      "email": "dev@starverte.com"
+    }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "~2.2",
+    "wp-coding-standards/wpcs": "~0.9"
+  }
+}
+
